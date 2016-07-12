@@ -1,0 +1,14 @@
+{{#each student}}
+<form action="" method="post">
+  <label for="firstName">First Name</label>
+  <input type="text" name="first_name" value="{{this.first_name}}">
+  <label for="lastName">Last Name</label>
+  <input type="text" name="last_name" value="{{this.last_name}}">
+  <label for="cohortName">Cohort</label>
+  <select name="cohort_id">
+    <option value="1">g25</option>
+    <option value="2">g213</option>
+  </select>
+  <button type="submit">Add Name</button>
+</form>
+{{/each}}
